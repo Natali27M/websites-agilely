@@ -1,0 +1,195 @@
+.first__view {
+    width: 100%;
+    height: 100vh;
+    background: url("../../../src/images/first__viev_bg.jpg") no-repeat center / cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fist__header,
+.fixed__header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 5;
+    transition: all .2s linear;
+}
+
+.header__logo {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #94b7d2;
+}
+
+.fixed__header {
+    height: 40px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #2e9dff;
+    color: #676770;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.fixed__header__logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #94b7d2;
+}
+
+.main__content {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    text-align: center;
+}
+
+.main__title {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.main__subtitle {
+    font-size: 36px;
+    font-weight: 500;
+    color: #2e9dff
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header__link {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.fixed__header .header__link {
+    font-size: 14px;
+    color: #676770;
+}
+
+.burger__btn {
+    display: none;
+    flex-direction: column;
+    row-gap: 4px;
+    cursor: pointer;
+    padding: 1px 0;
+    margin-right: -12px;
+}
+
+.burger__menu,
+.burger__menu_active {
+    position: absolute;
+    left: 0;
+    top: -200px;
+    width: 100%;
+    background-color: #000000;
+    border-top: 1px solid #2e9dff;
+    padding: 20px 0;
+    transition: .2s linear;
+    z-index: -2;
+}
+
+.fixed__header .burger__menu,
+.fixed__header .burger__menu_active {
+    background-color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid #2e9dff;
+}
+
+.fixed__header .burger__menu_active {
+    top: 40px
+}
+
+.burger__menu_active {
+    top: 60px;
+}
+
+
+.burger__menu_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    row-gap: 10px;
+}
+
+@media (max-width: 1200px) {
+    .header__link {
+        font-size: 12px;
+    }
+
+    .header__links {
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header__logo {
+        font-size: 28px;
+    }
+
+    .main__title {
+        font-size: 60px;
+    }
+
+    .main__subtitle {
+        font-size: 30px;
+    }
+
+
+    .header__links {
+        display: none;
+    }
+
+    .burger__btn {
+        display: flex;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .header__logo {
+        font-size: 20px;
+    }
+
+    .main__title {
+        font-size: 48px;
+    }
+
+    .main__subtitle {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__logo {
+        font-size: 18px;
+    }
+
+    .main__title {
+        font-size: 32px;
+    }
+
+    .main__subtitle {
+        font-size: 20px;
+    }
+}

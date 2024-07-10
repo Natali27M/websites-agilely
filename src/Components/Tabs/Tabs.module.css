@@ -1,0 +1,159 @@
+.tabs {
+    width: 100%;
+    height: calc(100vh - 40px);
+    max-height: 100vh;
+}
+
+.tabs__content {
+    height: 100%;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.buttons__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.tab__btn,
+.tab__btn_active {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    height: 35px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #676770;
+    border-radius: 3px;
+    padding: 0 15px;
+}
+
+.tab__btn_active {
+    background-color: #2e9dff;
+}
+
+.tabs__payload {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 60px;
+    padding-bottom: 50px;
+}
+
+.recruiting {
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.84) 24.79%, rgba(0, 0, 0, 0) 100%), url("../../images/tabs/recruiting.jpg") no-repeat center / cover;
+}
+
+.outsourcing {
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.84) 24.79%, rgba(0, 0, 0, 0) 100%), url("../../images/tabs/outsourcing.jpg") no-repeat center / cover;
+}
+
+.outstaffing {
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.84) 24.79%, rgba(0, 0, 0, 0) 100%), url("../../images/tabs/outstaffing.jpg") no-repeat center / cover;
+}
+
+.consulting {
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.84) 24.79%, rgba(0, 0, 0, 0) 100%), url("../../images/tabs/consulting.jpg") no-repeat center / cover;
+}
+
+.tabs__payload_content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
+}
+
+.tabs__payload_title {
+    font-size: 28px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.tabs__payload_text {
+    font-size: 18px;
+    color: #b0b0b0;
+}
+
+@media (max-width: 1000px) {
+    .tabs__payload {
+        padding-bottom: 40px;
+    }
+
+    .tabs__payload_title {
+        font-size: 24px;
+    }
+
+    .tabs__payload_text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tab__btn,
+    .tab__btn_active {
+        font-size: 14px;
+        line-height: 24px;
+        height: 24px;
+        padding: 0;
+        width: 130px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tabs__payload_content {
+        width: 80%;
+    }
+
+    .tabs__payload_title {
+        font-size: 24px;
+    }
+
+    .tabs__payload_text {
+        font-size: 14px;
+    }
+
+    .outsourcing{
+        background-position: left ;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .tabs__payload {
+        padding-bottom: 20px;
+    }
+
+    .tabs__payload_title {
+        font-size: 20px;
+    }
+
+    .tabs__payload_text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .tabs__payload_content {
+        width: 90%;
+    }
+    .tabs__payload_title {
+        font-size: 16px;
+    }
+
+    .tabs__payload_text {
+        font-size: 10px;
+    }
+}
